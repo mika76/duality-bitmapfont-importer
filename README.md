@@ -1,5 +1,5 @@
-# duality-bitmapfont-importer
-A bitmap font asset importer for the Duality game engine
+# Duality Bitmap Font Asset Importer
+A bitmap font asset importer for the [Duality game engine](http://duality.adamslair.net/)
 
 ## How to use
 * Generate the image (see Editors below)
