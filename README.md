@@ -9,7 +9,7 @@ The following links are to editors (some online, some not) which should be ssupp
  * https://www.glyphite.com/editor
  
 * Desktop 
-  * http://www.angelcode.com/products/bmfont/ (format user, but channels not yet supported)
+  * http://www.angelcode.com/products/bmfont/ (xml format used, but channels not yet supported)
   * http://renderhjs.net/shoebox/
   * http://www.lmnopc.com/bitmapfontbuilder/
   * https://www.scirra.com/forum/sprite-font-generator-v2_t86546
