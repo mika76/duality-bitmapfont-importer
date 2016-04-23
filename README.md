@@ -9,18 +9,23 @@ A bitmap font asset importer for the [Duality game engine](http://duality.adamsl
 ![How to screencap](http://mika76.github.io/duality-bitmapfont-importer/how_bitmap_font.gif)
 
 ## Editors 
-The following links are to editors (some online, some not) which should be ssupported to some extent or another.
+The following links are to editors (some online, some not) which should be supported to some extent or another.
 
 * Online
  * http://kvazars.com/littera/
  * https://www.glyphite.com/editor
  
 * Desktop 
-  * http://www.angelcode.com/products/bmfont/ (xml format used, but channels not yet supported)
-  * http://renderhjs.net/shoebox/
-  * http://www.lmnopc.com/bitmapfontbuilder/
-  * https://www.scirra.com/forum/sprite-font-generator-v2_t86546
-  * https://github.com/scriptum/UBFG (very interesting tool but totally different file format)
+  * Bitmap Font Generator - http://www.angelcode.com/products/bmfont/ (xml format used, but channels not yet supported)
+  * Bitmap Font Builder - http://www.lmnopc.com/bitmapfontbuilder/
+  
+* Editors with currently un-supported file formats
+  * Ultimate Bitmap Font Generator - https://github.com/scriptum/UBFG (very interesting tool but totally different file format)
+  * Font Studio - https://bitbucket.org/mikepote/font-studio
+  
+* Found but don't know much about yet
+  * ShoeBox - http://renderhjs.net/shoebox/ (havent actually used this one yet so unknown features to me)
+  * Sprite Font Generator - https://www.scirra.com/forum/sprite-font-generator-v2_t86546
 
 ## Notes ##
 
