@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="font">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="info">
+          <xs:complexType>
+            <xs:attribute name="face" type="xs:string" use="required" />
+            <xs:attribute name="size" type="xs:decimal" use="required" />
+            <xs:attribute name="bold" type="xs:unsignedByte" use="required" />
+            <xs:attribute name="italic" type="xs:unsignedByte" use="required" />
+            <xs:attribute name="charset" type="xs:string" use="optional" />
+            <xs:attribute name="unicode" type="xs:string" use="optional" />
+            <xs:attribute name="stretchH" type="xs:unsignedByte" use="required" />
+            <xs:attribute name="smooth" type="xs:unsignedByte" use="required" />
+            <xs:attribute name="aa" type="xs:unsignedByte" use="required" />
+            <xs:attribute name="padding" type="xs:string" use="required" />
+            <xs:attribute name="spacing" type="xs:string" use="required" />
+            <xs:attribute name="outline" type="xs:unsignedByte" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="common">
+          <xs:complexType>
+            <xs:attribute name="lineHeight" type="xs:unsignedByte" use="required" />
+            <xs:attribute name="base" type="xs:unsignedByte" use="required" />
+            <xs:attribute name="scaleW" type="xs:unsignedShort" use="required" />
+            <xs:attribute name="scaleH" type="xs:unsignedShort" use="required" />
+            <xs:attribute name="pages" type="xs:unsignedByte" use="required" />
+            <xs:attribute name="packed" type="xs:unsignedByte" use="required" />
+            <xs:attribute name="alphaChnl" type="xs:unsignedByte" use="optional" />
+            <xs:attribute name="redChnl" type="xs:unsignedByte" use="optional" />
+            <xs:attribute name="greenChnl" type="xs:unsignedByte" use="optional" />
+            <xs:attribute name="blueChnl" type="xs:unsignedByte" use="optional" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="pages">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="page" minOccurs="1">
+                <xs:complexType>
+                  <xs:attribute name="id" type="xs:unsignedByte" use="required" />
+                  <xs:attribute name="file" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="chars">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="char">
+                <xs:complexType>
+                  <xs:attribute name="id" type="xs:unsignedInt" use="required" />
+                  <xs:attribute name="x" type="xs:unsignedShort" use="required" />
+                  <xs:attribute name="y" type="xs:unsignedShort" use="required" />
+                  <xs:attribute name="width" type="xs:unsignedByte" use="required" />
+                  <xs:attribute name="height" type="xs:unsignedByte" use="required" />
+                  <xs:attribute name="xoffset" type="xs:byte" use="required" />
+                  <xs:attribute name="yoffset" type="xs:unsignedByte" use="required" />
+                  <xs:attribute name="xadvance" type="xs:unsignedByte" use="required" />
+                  <xs:attribute name="page" type="xs:unsignedByte" use="required" />
+                  <xs:attribute name="chnl" type="xs:unsignedByte" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="count" type="xs:unsignedByte" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="kernings" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="kerning">
+                <xs:complexType>
+                  <xs:attribute name="first" type="xs:unsignedByte" use="required" />
+                  <xs:attribute name="second" type="xs:unsignedByte" use="required" />
+                  <xs:attribute name="amount" type="xs:byte" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="count" type="xs:unsignedShort" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
