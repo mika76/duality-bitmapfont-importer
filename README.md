@@ -16,7 +16,7 @@ The following links are to editors (some online, some not) which should be suppo
  * https://www.glyphite.com/editor
  
 * Desktop 
-  * Bitmap Font Generator - http://www.angelcode.com/products/bmfont/ (xml format used, but channels not yet supported)
+  * Bitmap Font Generator - http://www.angelcode.com/products/bmfont/ - make sure you use 32 bit depth, png file, and xml file type. White on alpha is the best preset. (check http://mika76.github.io/duality-bitmapfont-importer/bmfont_settings.png)
   
 * Editors with currently un-supported file formats
   * Ultimate Bitmap Font Generator - https://github.com/scriptum/UBFG (very interesting tool but totally different file format)
