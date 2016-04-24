@@ -298,7 +298,7 @@ namespace BMFontPlugin
                                 {
                                     Glyph = g.Glyph,
                                     OffsetX = g.OffsetX,
-                                    OffsetY = g.OffsetY,
+                                    OffsetY = g.OffsetY * -1,
                                     Width = g.Width,
                                     Height = g.Height
                                 },
